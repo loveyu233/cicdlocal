@@ -1,0 +1,45 @@
+# 系统
+.DS_Store
+__pycache__/
+
+# SwiftPM / Xcode 构建产物
+.build/
+.swiftpm/
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+
+# XcodeGen 生成的工程，以 project.yml 为准
+LocalCICD.xcodeproj/
+
+# cicddemo 隔离副本（测试脚本生成）
+.test-repos/
+
+# 凭据与本地配置，任何情况下都不提交
+*.kubeconfig
+kubeconfig
+*.p12
+*.mobileprovision
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.cer
+*.crt
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.log
+*.xcresult/
+*.xcarchive/
+*.app/
+*.zip
+__debug_*
+.codex/
+
+# 公开仓库不携带开发者机器的实际发布配置。
+.local.cicd.yml
